@@ -315,7 +315,8 @@ elif page == "Iranian-Persian Holdings":
     fig_overlay = px.histogram(
         overlay_df, x="begin_year", color="dataset", barmode="overlay", opacity=0.7,
         title="Distribution of Object Dating Start (Year, from 1000 BCE): Entire Collection vs. Iran Dataset",
-        labels={"begin_year": "Object Dating Start (Year)", "dataset": "Dataset"}
+        labels={"begin_year": "Object Dating Start (Year)", "dataset": "Dataset"},
+        color_discrete_map={"Entire Collection": "darkred", "Iran Dataset": "goldenrod"}
     )
 
     fig_overlay.update_layout(title_x=0, template="plotly_white")
@@ -630,7 +631,8 @@ elif page == "Focus Areas of the Iran Collection":
         fig_periods = px.line(
             department_period_df, x="iran_period", y="object_id", color="department", markers=True,
             title="Historical Periods by Department",
-            labels={"iran_period": "Historical Period", "object_id": "Number of Objects", "department": "Department"}
+            labels={"iran_period": "Historical Period", "object_id": "Number of Objects", "department": "Department"},
+            color_discrete_map={"Islamic Art": "darkred", "Ancient Near Eastern Art": "goldenrod"}
         )
 
         fig_periods.update_layout(title_x=0, template="plotly_white")
@@ -680,7 +682,8 @@ elif page == "Focus Areas of the Iran Collection":
         fig_acquisition_department = px.histogram(
             acquisition_department_df, x="acquisition_year", color="department", barmode="overlay", opacity=0.7,
             title="Distribution of Acquisition Years by Department",
-            labels={"acquisition_year": "Acquisition Year", "department": "Department"}
+            labels={"acquisition_year": "Acquisition Year", "department": "Department"},
+            color_discrete_map={"Islamic Art": "darkred", "Ancient Near Eastern Art": "goldenrod"}
         )
 
         fig_acquisition_department.update_layout(title_x=0, template="plotly_white")

@@ -255,7 +255,7 @@ Auch die Erwerbungsgeschichte weist deutliche Schwerpunktphasen auf: starke Erwe
 
 ## Dashboard
 
-Zur interaktiven Visualisierung der Ergebnisse wurde mit Streamlit ein Dashboard entwickelt (dashboard.py) mit vier Bereichen:
+Zur interaktiven Visualisierung der Ergebnisse wurde mit Streamlit — als Python-natives Tool, das sich nahtlos in den restlichen Analyse-Stack (Pandas, Plotly) einfügt — ein Dashboard (dashboard.py) mit vier Bereichen entwickelt:
 
 - **Overall Collection** – Kennzahlen und Diagramme zur Gesamtsammlung, filterbar nach Department, Land, Weltregion und Jahrhundert.
 - **Iranian-Persian Holdings** – Einordnung des iranischen Teildatensatzes in die Gesamtsammlung.

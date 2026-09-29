@@ -299,7 +299,7 @@ Im Projekt kamen unter anderem folgende Konzepte und Techniken zum Einsatz:
 - Datenvisualisierung mit Plotly Express (Balken-, Linien-, Kreis- und Streudiagramme, Histogramme).
 - Prüfung einer Korreltationsberechnung (Ausschluss einer Korrelationsmatrix, nummerische Werte nicht geeignet).
 - Export bereinigter/abgeleiteter Datensätze als CSV für die Weiterverwendung im Dashboard.
-- Dashboard bzw. interaktive Web-Anwendung mit Streamlit (Caching, Sidebar-Filter, Tabs, Metrics, interaktive Karten).
+- Dashboard bzw. interaktive Web-Anwendung mit Streamlit (Caching, Sidebar-Filter, Tabs, Metrics, interaktive Karten, Tooltip).
 - Anbindung externer APIs (MET Collection API, Wikidata SPARQL-Endpoint) über `requests`.
 
 ---

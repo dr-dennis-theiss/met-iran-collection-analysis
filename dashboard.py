@@ -695,7 +695,13 @@ elif page == "Object Explorer":
     st.header("Object Explorer")
 
     if st.sidebar.button("Reset Filters", key="oe_reset_btn"):
-        reset_filters(["oe_period", "oe_department", "oe_classification", "oe_city", "oe_culture", "oe_begin_year_range"])
+        st.session_state["oe_period"] = "All"
+        st.session_state["oe_department"] = "All"
+        st.session_state["oe_classification"] = "All"
+        st.session_state["oe_city"] = []
+        st.session_state["oe_culture"] = []
+        st.session_state["oe_begin_year_range"] = (IRAN_MIN_YEAR, IRAN_MAX_YEAR)
+        st.rerun()
 
     explorer_df = iran_df.copy()
 

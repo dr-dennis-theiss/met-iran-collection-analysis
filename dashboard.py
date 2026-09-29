@@ -253,7 +253,7 @@ if page == "Overall Collection":
 
     fig_hist = px.histogram(
         histogram_df, x="begin_year",
-        title="Distribution of Object Dating Start (Year)",
+        title="Distribution of Object Dating Start (Year, from 1000 BCE – Earliest Object: 95,000 BC)",
         labels={"begin_year": "Dating Start (Year)"}
     )
 
@@ -298,7 +298,7 @@ elif page == "Iranian-Persian Holdings":
     col2.metric("Share of Overall Collection", f"{round(len(filtered_iran_df) / len(analysis_df) * 100, 2)} %")
 
     after_1000 = round(len(filtered_iran_df[filtered_iran_df["begin_year"] >= -1000]) / len(filtered_iran_df) * 100, 2)
-    col3.metric("Objects after 1000 BCE", f"{after_1000} %")
+    col3.metric("Objects after 1000 BCE", f"{after_1000} %", help="Earliest object in the Iranian-Persian holdings dates to 6000 BCE")
 
     nishapur_count = len(filtered_iran_df[filtered_iran_df["city"] == "Nishapur"])
     col4.metric("Nishapur Objects", f"{nishapur_count:,}")
@@ -314,7 +314,7 @@ elif page == "Iranian-Persian Holdings":
 
     fig_overlay = px.histogram(
         overlay_df, x="begin_year", color="dataset", barmode="overlay", opacity=0.7,
-        title="Distribution of Object Dating Start (Year): Entire Collection vs. Iran Dataset",
+        title="Distribution of Object Dating Start (Year, from 1000 BCE): Entire Collection vs. Iran Dataset",
         labels={"begin_year": "Object Dating Start (Year)", "dataset": "Dataset"}
     )
 

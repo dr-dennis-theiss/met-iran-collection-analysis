@@ -200,7 +200,7 @@ Ziel: Analyse der materiellen und funktionalen Zusammensetzung der iranisch-pers
 - Histogramm „Distribution of Acquisition Years": mehrere Erwerbungswellen, stärkster Schwerpunkt 1948/1949 mit über 2.000 Objekten.
 - Streudiagramm „Number of Acquisitions by Year": Spitzenjahre 1939/1940 sowie 1948/1949; 1948 allein 1.982 Objekte – der stärkste Einzelzugang des gesamten Datensatzes.
 
-**Ergebnis Analyse 4:** Die Bestände werden materiell von Fragmenten, Keramik, Stuckobjekten, Münzen und Handschriften geprägt; Stucco und Ceramics vereinen zusammen mehr als ein Drittel aller Objekte. Der Sammlungsschwerpunkt im Jahrzehnt 800–809 n. Chr. (Analyse 3) erklärt sich direkt durch die hohe Zahl frühislamischer Stuckobjekte, die zudem räumlich stark auf Nishapur konzentriert sind (93,43 % der Early-Islamic-Bestände). Jede Epoche wird durch eine eigene materielle Tradition geprägt (Clay-Sealings bei den Parthern, Münzen bei den Sasaniden, Codices bei Safawiden/Qajaren). Die Erwerbungsgeschichte zeigt deutliche Wellen, insbesondere vor dem Kriegseintritt der USA sowie 1948/1949.
+**Ergebnis Analyse 4:** Die Bestände werden materiell von Fragmenten, Keramik, Stuckobjekten, Münzen und Handschriften geprägt; Stucco und Ceramics vereinen zusammen mehr als ein Drittel aller Objekte. Der Sammlungsschwerpunkt im Jahrzehnt 800–809 n. Chr. (Analyse 3) erklärt sich direkt durch die hohe Zahl frühislamischer Stuckobjekte, die zudem räumlich stark auf Nishapur konzentriert sind (93,43 % der Early-Islamic-Bestände). Dieser Peak lässt sich historisch auf die eigenen Ausgrabungen des Met in Nishapur (1935–1940er Jahre) zurückführen, die zugleich die starke geografische und materielle Konzentration der Early-Islamic-Bestände erklären. Jede Epoche wird durch eine eigene materielle Tradition geprägt (Clay-Sealings bei den Parthern, Münzen bei den Sasaniden, Codices bei Safawiden/Qajaren). Die Erwerbungsgeschichte zeigt deutliche Wellen: ein Rückgang um den Kriegseintritt der USA und die gleichzeitige Besetzung Irans durch britische und sowjetische Truppen 1941, gefolgt vom stärksten Erwerbungsschwerpunkt 1948/1949.
 
 ---
 
@@ -245,11 +245,11 @@ Besonders auffällig ist die starke Präsenz iranisch-persischer Objekte im frü
 
 Die zeitliche Analyse zeigt eine starke Konzentration auf wenige historische Kernperioden: Die Early Islamic Period umfasst allein 3.836 Objekte bzw. 42,19 % des gesamten Iran-Datensatzes. Daneben sind insbesondere die Parther-, vorachämenidischen und sasanidischen Perioden stark vertreten. Innerhalb der Early Islamic Period konzentrieren sich die Bestände außergewöhnlich stark auf das Jahrzehnt 800–809 n. Chr. mit 2.525 Objekten – dieser Schwerpunkt prägt die gesamte zeitliche Struktur des Iran-Datensatzes.
 
-Materiell und funktional werden die Bestände von Fragmenten, Keramik, Stuckobjekten, Münzen und Handschriften dominiert. Besonders hervorzuheben ist die Klassifikation Stucco mit 1.745 Objekten, der größten Einzelgruppe: Von den 1.735 Stucco-Objekten der Early Islamic Period werden 1.721 auf das Jahrzehnt 800–809 n. Chr. datiert. Räumlich konzentriert sich die Early Islamic Period zudem stark auf Nishapur: Von den 3.836 Objekten dieser Epoche entfallen 3.584 (93,43 %) auf diese Stadt. Die zeitliche, materielle und räumliche Konzentration der Bestände fällt damit in bemerkenswerter Weise zusammen.
+Materiell und funktional werden die Bestände von Fragmenten, Keramik, Stuckobjekten, Münzen und Handschriften dominiert. Besonders hervorzuheben ist die Klassifikation Stucco mit 1.745 Objekten, der größten Einzelgruppe: Von den 1.735 Stucco-Objekten der Early Islamic Period werden 1.721 auf das Jahrzehnt 800–809 n. Chr. datiert. Räumlich konzentriert sich die Early Islamic Period zudem stark auf Nishapur: Von den 3.836 Objekten dieser Epoche entfallen 3.584 (93,43 %) auf diese Stadt. Die zeitliche, materielle und räumliche Konzentration der Bestände fällt damit in bemerkenswerter Weise zusammen und lässt sich auf die eigenen Ausgrabungen des Met in Nishapur (1935–1940er Jahre) zurückführen.
 
 Institutionell konzentrieren sich die Bestände nahezu vollständig auf die Departments Islamic Art und Ancient Near Eastern Art, die zusammen rund 97 % aller iranisch-persischen Objekte verwalten. Dabei zeigt sich eine klare historische Arbeitsteilung: Ancient Near Eastern Art konzentriert sich auf die vorislamischen Epochen, Islamic Art vor allem auf die islamischen und frühneuzeitlichen Perioden.
 
-Auch die Erwerbungsgeschichte weist deutliche Schwerpunktphasen auf: starke Erwerbungswellen unmittelbar vor dem Kriegseintritt der USA in den Zweiten Weltkrieg sowie in den Jahren 1948 und 1949 (1948 allein 1.982 Objekte, der stärkste Einzelzugang des gesamten Datensatzes). Der anschließende Bestandsaufbau während der Pahlavi-Zeit erfolgt deutlich kontinuierlicher und auf niedrigerem Niveau (provinienzhistorisch auch für Leitfrage 2 von Interesse).
+Auch die Erwerbungsgeschichte weist deutliche Schwerpunktphasen auf: ein Rückgang um den Kriegseintritt der USA und die gleichzeitige Besetzung Irans durch britische und sowjetische Truppen 1941, gefolgt von starken Erwerbungswellen in den Jahren 1948 und 1949 (1948 allein 1.982 Objekte, der stärkste Einzelzugang des gesamten Datensatzes). Diese Wellen stehen unmittelbar mit den Met-eigenen Ausgrabungen in Nishapur im Zusammenhang, durch die ein Großteil der frühislamischen Stuckobjekte gebündelt in die Sammlung gelangte. Der anschließende Bestandsaufbau während der Pahlavi-Zeit erfolgt deutlich kontinuierlicher und auf niedrigerem Niveau (provinienzhistorisch auch für Leitfrage 2 von Interesse).
 
 ---
 
@@ -342,7 +342,7 @@ Im Projekt kamen unter anderem folgende Konzepte und Techniken zum Einsatz:
 
 - `main.ipynb` – Jupyter Notebook mit dem vollständigen Analyseprozess.
 - `dashboard.py` – Streamlit-Dashboard zur interaktiven Visualisierung.
-- `Dennis_Abschlusspräsentation_MET-Iran_Python.pptx` – Abschlusspräsentation.
+- `presentation.pptx` – Abschlusspräsentation.
 
 ---
 

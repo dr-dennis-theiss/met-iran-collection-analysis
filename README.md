@@ -262,6 +262,8 @@ Zur interaktiven Visualisierung der Ergebnisse wurde mit Streamlit ein Dashboard
 - **Focus Areas of the Iran Collection** – vertiefte Auswertung nach Zeit, Material, Erwerbung und Institution (inkl. Departmentvergleich).
 - **Object Explorer** – Detailansicht einzelner Objekte: Objektinformationen direkt aus dem Datensatz (u. a. Object Name, Period, Classification, Department, City, Culture), ergänzt um Object Number, Met Catalogue Link und Objektbild aus der MET Collection API. Geografische Einordnung über eine interaktive OpenStreetMap-Karte (Plotly, Wikidata-Geokodierung), die den Objektstandort gemeinsam mit allen iranischen UNESCO-Welterbestätten (Wikidata SPARQL) darstellt, inkl. Wikipedia-Links zur Objektstadt und zu allen Welterbestätten.
 
+Die im Dashboard verwendeten Diagramme und Kennzahlen (KPIs) sind eine Auswahl der im Notebook zur Beantwortung der Leitfragen genutzten Analysen. Die Diagrammtitel erscheinen im Dashboard lediglich linksbündig statt zentriert und optisch fett, um dem Design des Dashboards gerecht zu werden.
+
 ## Zentrale Erkenntnis
 
 Die iranisch-persischen Bestände des Metropolitan Museum of Art sind klein im Anteil, bilden jedoch einen historisch, materiell und institutionell klar strukturierten Sammlungsschwerpunkt. Gleichzeitig zeigt die Analyse deutliche Dokumentationslücken in der Gesamtsammlung, insbesondere bei Kultur- und Herkunftsangaben.

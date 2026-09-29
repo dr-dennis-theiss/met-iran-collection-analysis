@@ -87,7 +87,7 @@ IRAN_MAX_YEAR = int(iran_df["begin_year"].max())
 # Reset filters helper
 def reset_filters(keys):
     for key in keys:
-        st.session_state.pop(key, None)
+        st.session_state[key] = []
     st.rerun()
 
 # Map with only UNESCO sites, centered on Isfahan (used when no single object location can be shown)

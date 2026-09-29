@@ -342,7 +342,7 @@ Im Projekt kamen unter anderem folgende Konzepte und Techniken zum Einsatz:
 
 - `main.ipynb` – Jupyter Notebook mit dem vollständigen Analyseprozess.
 - `dashboard.py` – Streamlit-Dashboard zur interaktiven Visualisierung.
-- `Dennis_Abschlusspräsentation_MET-Iran_Python.pptx` – Abschlusspräsentation.
+- `presentation.pptx` – Abschlusspräsentation.
 
 ---
 

@@ -698,6 +698,7 @@ elif page == "Object Explorer":
     st.header("Object Explorer")
 
     if st.sidebar.button("Reset Filters", key="oe_reset_btn"):
+        st.session_state["oe_title_search"] = []
         st.session_state["oe_period"] = "All"
         st.session_state["oe_department"] = "All"
         st.session_state["oe_classification"] = "All"
@@ -708,12 +709,16 @@ elif page == "Object Explorer":
 
     explorer_df = iran_df.copy()
 
+    title_search = st.sidebar.multiselect("Title", sorted(iran_df["title"].dropna().unique()), key="oe_title_search")
     period_filter = st.sidebar.selectbox("Iran Period", ["All"] + sorted(iran_df["iran_period"].dropna().unique()), key="oe_period")
     department_filter = st.sidebar.selectbox("Department", ["All"] + sorted(iran_df["department"].dropna().unique()), key="oe_department")
     classification_filter = st.sidebar.selectbox("Classification", ["All"] + sorted(iran_df["classification"].dropna().unique()), key="oe_classification")
     city_filter = st.sidebar.multiselect("City", sorted(iran_df["city"].dropna().unique()), key="oe_city")
     culture_filter = st.sidebar.multiselect("Culture", sorted(iran_df["culture"].dropna().unique()), key="oe_culture")
     year_range = st.sidebar.slider("Dating Start (Year) Range", min_value=IRAN_MIN_YEAR, max_value=IRAN_MAX_YEAR, value=(IRAN_MIN_YEAR, IRAN_MAX_YEAR), key="oe_begin_year_range")
+
+    if title_search:
+        explorer_df = explorer_df[explorer_df["title"].isin(title_search)]
 
     if period_filter != "All":
         explorer_df = explorer_df[explorer_df["iran_period"] == period_filter]
@@ -798,7 +803,7 @@ elif page == "Object Explorer":
         st.subheader("Geographic Context")
 
         if selected_city != "unknown" and pd.notna(selected_city) and " or " in selected_city:
-            st.info(f"City is ambiguous ({selected_city}), so no single location can be shown.")
+            st.info(f"City is ambiguous ({selected_city}), no single location can be shown.")
             show_unesco_only_map()
 
         elif selected_city != "unknown" and pd.notna(selected_city):
@@ -834,7 +839,8 @@ elif page == "Object Explorer":
                         st.markdown(f"- [{site['name']}]({site['wiki_url']})")
 
             else:
-                st.info(f"No Wikidata coordinates found for {selected_city}.")
+                st.info(f"No coordinates found for {selected_city}, no single location can be shown.")
+                show_unesco_only_map()
 
         else:
             st.info("No city available for this object.")

@@ -281,7 +281,7 @@ if page == "Overall Collection":
         textinfo="percent+label",
         texttemplate="%{label}<br>%{percent:.2%}"
     )
-    
+
     fig_acquisition_total.update_layout(title_x=0, template="plotly_white")
 
     st.plotly_chart(fig_acquisition_total, use_container_width=True)
@@ -433,7 +433,7 @@ elif page == "Focus Areas of the Iran Collection":
 
     st.divider()
 
-    tab1, tab2, tab3, tab4 = st.tabs(["Historical", "Material", "Acquisition", "Institutional"])
+    tab1, tab2, tab3, tab4 = st.tabs(["Historical", "Categories", "Acquisition", "Institutional"])
 
     with tab1:
 

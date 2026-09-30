@@ -274,6 +274,14 @@ if page == "Overall Collection":
 
     fig_acquisition_total = px.pie(
         acquisition_total_dashboard, names="acquisition_type", values="object_id",
+        color="acquisition_type",
+        color_discrete_map={
+            "Gift": "darkred",
+            "Other": "goldenrod",
+            "Bequest": "seagreen",
+            "Purchase": "steelblue",
+            "Transferred": "slategray"
+        },
         title="Acquisition Types of the Collection"
     )
 
@@ -577,7 +585,17 @@ elif page == "Focus Areas of the Iran Collection":
             .reset_index()
         )
 
-        fig_acquisition_type = px.pie(acquisition_df, names="acquisition_type", values="object_id", title="Acquisition Types of Iranian-Persian Objects")
+        fig_acquisition_type = px.pie(
+            acquisition_df, names="acquisition_type", values="object_id",
+            color="acquisition_type",
+            color_discrete_map={
+                    "Gift": "darkred",
+                    "Other": "goldenrod",
+                    "Bequest": "seagreen",
+                    "Purchase": "steelblue"
+            },
+            title="Acquisition Types of Iranian-Persian Objects"
+        )
         fig_acquisition_type.update_traces(
             textinfo="percent+label",
             texttemplate="%{label}<br>%{percent:.2%}"

@@ -322,7 +322,7 @@ Im Projekt kamen unter anderem folgende Konzepte und Techniken zum Einsatz:
 
 ### 4. Focus Areas – Material
 
-![Focus Areas – Material](db_screenshots/04_focus_areas_material.png)
+![Focus Areas – Material](db_screenshots/04_focus_areas_categories.png)
 
 ### 5. Focus Areas – Acquisition
 

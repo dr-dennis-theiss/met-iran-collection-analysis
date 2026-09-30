@@ -238,7 +238,7 @@ if page == "Overall Collection":
     fig_region = px.bar(
         region_dashboard, x="world_region", y="object_id", text_auto=",.0f",
         title="World Region of Origin in the Met Collection Dataset",
-        labels={"world_region": "Continent", "object_id": "Numer of Objects"}
+        labels={"world_region": "Continent", "object_id": "Number of Objects"}
     )
 
     fig_region.update_traces(marker_color="darkred", textposition="outside")
@@ -263,6 +263,28 @@ if page == "Overall Collection":
     fig_hist.update_yaxes(title_text="Number of Objects", showgrid=False)
 
     st.plotly_chart(fig_hist, use_container_width=True)
+
+    # Acquisition types
+    acquisition_total_dashboard = (
+        filtered_df.groupby("acquisition_type")["object_id"]
+        .count()
+        .sort_values(ascending=False)
+        .reset_index()
+    )
+
+    fig_acquisition_total = px.pie(
+        acquisition_total_dashboard, names="acquisition_type", values="object_id",
+        title="Acquisition Types of the Collection"
+    )
+
+    fig_acquisition_total.update_traces(
+        textinfo="percent+label",
+        texttemplate="%{label}<br>%{percent:.2%}"
+    )
+    
+    fig_acquisition_total.update_layout(title_x=0, template="plotly_white")
+
+    st.plotly_chart(fig_acquisition_total, use_container_width=True)
 
 elif page == "Iranian-Persian Holdings":
 
@@ -556,7 +578,10 @@ elif page == "Focus Areas of the Iran Collection":
         )
 
         fig_acquisition_type = px.pie(acquisition_df, names="acquisition_type", values="object_id", title="Acquisition Types of Iranian-Persian Objects")
-        fig_acquisition_type.update_traces(textinfo="percent+label")
+        fig_acquisition_type.update_traces(
+            textinfo="percent+label",
+            texttemplate="%{label}<br>%{percent:.2%}"
+        )
         fig_acquisition_type.update_layout(title_x=0, template="plotly_white")
 
         st.plotly_chart(fig_acquisition_type, use_container_width=True)

@@ -320,7 +320,7 @@ Im Projekt kamen unter anderem folgende Konzepte und Techniken zum Einsatz:
 
 ![Focus Areas – Historical](db_screenshots/03_focus_areas_historical.png)
 
-### 4. Focus Areas – Material
+### 4. Focus Areas – Categories
 
 ![Focus Areas – Material](db_screenshots/04_focus_areas_categories.png)
 
